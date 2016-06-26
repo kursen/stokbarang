@@ -124,8 +124,7 @@ require("layout/header.php");
 	  
 	  <?php
 		$querysaldo = mysqli_query($connection,"select masterbarang.kode_barang,masterbarang.nama_barang,ifnull(penerimaan_barang.jumlah,0) as jumlahmasuk,ifnull(penjualan_barang.jumlah,0) as jumlahkeluar,
-ifnull(retur_barang.jumlah_retur,0) as jumlahretur,
-ifnull(ifnull(penerimaan_barang.jumlah-penjualan_barang.jumlah,0)+retur_barang.jumlah_retur,0) as saldo from masterbarang left join 
+ifnull(retur_barang.jumlah_retur,0) as jumlahretur,ifnull(ifnull(penerimaan_barang.jumlah,0)-ifnull(penjualan_barang.jumlah,0),0) as saldo from masterbarang left join 
 penerimaan_barang on 
 masterbarang.kode_barang = penerimaan_barang.kode_barang 
 left join penjualan_barang on masterbarang.kode_barang = penjualan_barang.kode_barang 

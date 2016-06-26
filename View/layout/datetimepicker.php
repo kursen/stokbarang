@@ -4,7 +4,9 @@
 <script type="text/javascript" src="../Content/bootstrapdatetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script type='text/javascript'>
 $(document).ready(function(){
-	$('#dtpicker').datetimepicker();
+	$('#dtpicker').datetimepicker({
+		format:'YYYY-MM-DD'
+	});
 });
 	
 </script>

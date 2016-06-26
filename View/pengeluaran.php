@@ -71,7 +71,7 @@ include('layout/datetimepicker.php');
   <div class="form-group">
     <label for="" class="col-sm-2 control-label">Pelanggan</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" name="pelanggan" value="<?php print $lists['pelanggan']; ?>" required>
+      <input type="text" class="form-control" name="costumer" value="<?php print $lists['costumer']; ?>" required>
 	</div>
   </div>
   <div class="form-group">
