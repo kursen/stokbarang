@@ -8,7 +8,7 @@
 <!--js = javascript-->
 <script src="../Scripts/jquery/jquery-min.js" type="text/javascript"></script>
 <script src="../Content/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="../Scripts/jquery.battatech.excelexport.js"></script>
+<link href="../Content/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 <script type="text/javascript">
 $(document).ready(function(){
